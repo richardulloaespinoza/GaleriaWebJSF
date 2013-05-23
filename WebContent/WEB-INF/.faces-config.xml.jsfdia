@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#pages#editar.jsp" PATH="/pages/editar.jsp"
+  SHAPE="240,145,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#pages#*" PATH="/pages/*" SHAPE="32,129,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#pages#*:0" NAME="item" PATH="/pages/*" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID=":#{galeria.editar}:#pages#editar.jsp"
+    NAME="output" PATH="/pages/editar.jsp"
+    TARGET="rules:#pages#editar.jsp" TITLE="#{galeria.editar}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID=":#{galeria.nuevo}:#pages#editar.jsp"
+    NAME="output1" PATH="/pages/editar.jsp"
+    TARGET="rules:#pages#editar.jsp" TITLE="#{galeria.nuevo}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{galeria.borrar}:#pages#administracion.jsp" NAME="output2"
+    PATH="/pages/administracion.jsp"
+    TARGET="rules:#pages#administracion.jsp"
+    TITLE="#{galeria.borrar}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{galeria.guardar}:#pages#administracion.jsp" NAME="output3"
+    PATH="/pages/administracion.jsp"
+    TARGET="rules:#pages#administracion.jsp"
+    TITLE="#{galeria.guardar}:[any]" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID=":#{galeria.administracion}:#pages#administracion.jsp"
+    NAME="output4" PATH="/pages/administracion.jsp"
+    TARGET="rules:#pages#administracion.jsp"
+    TITLE="#{galeria.administracion}:[any]" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#pages#administracion.jsp"
+  PATH="/pages/administracion.jsp" SHAPE="240,257,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>

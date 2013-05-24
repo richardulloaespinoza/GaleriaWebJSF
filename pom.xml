@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+            http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cl.signos.penta</groupId>
+    <artifactId>Galeria</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+    <name>GaleriaWebJSF</name>
+
+    <modules>
+        <module>JavaSource</module>
+        <module>WebnContent</module>
+        <module>ant</module>
+    </modules>
+
+    <properties>
+        <compiler.plugin.version>3.1</compiler.plugin.version>
+        <java.version>1.5</java.version>
+        <project.source.encoding>UTF-8</project.source.encoding>
+        <spring.version>3.2.2.RELEASE</spring.version>
+        <junit.version>4.11</junit.version>
+        <Galeria.version>1.0</Galeria.version>
+    </properties>
+    
+    <repositories>
+        <repository>  
+            <id>jboss</id>  
+            <name>Jboss Maven Repository</name>  
+            <url>https://repository.jboss.org/nexus/content/repositories/public/</url>  
+            <layout>default</layout>  
+        </repository>         
+        <repository>  
+            <id>prime-repo</id>  
+            <name>PrimeFaces Maven Repository</name>  
+            <url>http://repository.primefaces.org</url>  
+            <layout>default</layout>  
+        </repository> 
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${compiler.plugin.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>${project.source.encoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+
